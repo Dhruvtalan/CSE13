@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pinterest Clone</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f1f1f1;
+}
+
+/* Navbar */
+.navbar{
+    background:white;
+    padding:15px 25px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo{
+    color:#e60023;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.search{
+    width:50%;
+    padding:10px 15px;
+    border:none;
+    border-radius:25px;
+    background:#efefef;
+    outline:none;
+}
+
+/* Masonry Layout */
+.container{
+    column-count:4;
+    column-gap:15px;
+    padding:20px;
+}
+
+.card{
+    background:white;
+    margin-bottom:15px;
+    border-radius:15px;
+    overflow:hidden;
+    break-inside:avoid;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.02);
+}
+
+.card img{
+    width:100%;
+    display:block;
+}
+
+.card p{
+    padding:10px;
+    font-weight:bold;
+}
+
+@media(max-width:1000px){
+    .container{
+        column-count:3;
+    }
+}
+
+@media(max-width:700px){
+    .container{
+        column-count:2;
+    }
+}
+
+@media(max-width:500px){
+    .container{
+        column-count:1;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+    <div class="logo">Pinterest</div>
+    <input type="text" class="search" placeholder="Search">
+</div>
+
+<div class="container">
+
+    <div class="card">
+        <img src="https://picsum.photos/300/400?random=1">
+        <p>Nature Photography</p>
+    </div>
+
+    <div class="card">
+        <img src="https://picsum.photos/300/500?random=2">
+        <p>Travel Ideas</p>
+    </div>
+
+    <div class="card">
+        <img src="https://picsum.photos/300/350?random=3">
+        <p>Home Decor</p>
+    </div>
+
+    <div class="card">
+        <img src="https://picsum.photos/300/600?random=4">
+        <p>Fashion Trends</p>
+    </div>
+
+    <div class="card">
+        <img src="https://picsum.photos/300/450?random=5">
+        <p>Food Recipes</p>
+    </div>
+
+    <div class="card">
+        <img src="https://picsum.photos/300/380?random=6">
+        <p>Art Inspiration</p>
+    </div>
+
+    <div class="card">
+        <img src="https://picsum.photos/300/520?random=7">
+        <p>Architecture</p>
+    </div>
+
+    <div class="card">
+        <img src="https://picsum.photos/300/430?random=8">
+        <p>DIY Projects</p>
+    </div>
+
+</div>
+
+</body>
+</html>
