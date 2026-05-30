@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Webpage</title>
+
+    <style>
+        body {
+            margin: 0;
+            background-color: black;
+            color: lightgray;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .title {
+            font-size: 50px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .subtitle {
+            font-size: 28px;
+            margin: 0;
+        }
+
+        .class-name {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        .image {
+            margin-top: 30px;
+            border-radius: 15px;
+            border: 3px solid lightgray;
+        }
+
+        .video {
+            margin-top: 30px;
+            border: 3px solid lightgray;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <p class="title">Welcome to my webpage</p>
+        <p class="subtitle">Hello</p>
+        <h2 class="class-name">CSE-13</h2>
+
+        <!-- Image -->
+        <img 
+            class="image"
+            src="https://scaquarium.org/wp-content/uploads/2026/02/common-octopus.png"
+            alt="Octopus Image">
+
+        <br>
+
+        <!-- Larger YouTube Video -->
+        <iframe 
+            class="video"
+            width="800" 
+            height="450"
+            src="https://www.youtube.com/embed/mFP_AjJeP-M"
+            title="YouTube video player"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+</body>
+</html>
